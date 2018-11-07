@@ -37,6 +37,12 @@ $ cd sass-boilerplate
 $ sudo npm install 
 ```
 
+Install CLI for SASS:
+
+```sh
+npm install -g sass
+```
+
 Install CLI for Bower:
 
 ```sh
@@ -59,7 +65,7 @@ sudo npm install -g grunt-cli
 
 - Grunt Sass: Compile Sass to CSS using node-sass
 - Grunt Contrib Uglify: Minify JavaScript files
-- Grunt Contrib Watch: Monitor files and excute tasks
+- Grunt Contrib Watch: Monitor files and execute tasks
 
 #### Running GRUNT
 
