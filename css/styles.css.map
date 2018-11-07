@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../sassy/assets/scss/styles.scss"
+	],
+	"names": [],
+	"mappings": "AAIA,AAAA,CAAC,CAAC;EACE,KAAK,EALmB,IAAI;EAM5B,OAAO,EAAE,CAAC,GACb"
+}

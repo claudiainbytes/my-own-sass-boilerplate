@@ -1,5 +1,7 @@
 //The "wrapper" function
 module.exports = function(grunt) {
+
+	const sass = require('node-sass');
   
 	//Project and task configuration
 	grunt.initConfig({
@@ -13,11 +15,12 @@ module.exports = function(grunt) {
 		sass: {
 
 			options: {
-				sourceMap: false
+				implementation: sass, 
+				sourceMap: true 
 			},
 			dist: {
 				files: {
-					'css/styles.css' : 'assets/scss/styles.scss'
+					'css/styles.css' : 'sassy/assets/scss/styles.scss'
 				}
 			}
 		},
@@ -31,7 +34,7 @@ module.exports = function(grunt) {
 			sass: {
 
 				files: [
-					'assets/scss/*.scss'
+					'sassy/assets/scss/*.scss'
 				],
 				tasks : [
 					'sass'
@@ -40,7 +43,7 @@ module.exports = function(grunt) {
 			scripts: {
 
 				files: [
-					'assets/js/*.js'
+					'sassy/assets/js/*.js'
 				],
 				tasks : [
 					'uglify'
@@ -56,7 +59,7 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target:{
 				files: {
-					'js/scripts.js' : ['assets/js/scripts.js', 'node_modules/jquery/dist/jquery.js']
+					'js/scripts.js' : ['sassy/assets/js/scripts.js', 'node_modules/jquery/dist/jquery.js']
 				}
 			}
 		}
